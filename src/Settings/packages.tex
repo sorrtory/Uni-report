@@ -19,12 +19,19 @@
 \usepackage{graphicx} % пакет для использования графики (чтобы вставлять рисунки, фотографии и пр.)
 
 
+% настройки оглавления
+\usepackage{tocloft}
+\renewcommand{\cftpartleader}{\cftdotfill{\cftdotsep}} % for parts
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}} % for sections, if you really want! (It is default in report and book class (So you may not need it).
+
+
 % качественные листинги кода
 \usepackage{minted}
 \usepackage{listings}
 \usepackage{lstfiracode}
 
-
+% Елочки-скобки с помощью /textquote
+\usepackage{csquotes}
 
 \usepackage{amsmath} % поддержка математических символов
 
@@ -34,7 +41,8 @@
 
 \bibliographystyle{unsrtnat} % выбираем стиль библиографии отсюда: https://www.overleaf.com/learn/latex/Natbib_bibliography_styles
 
-\setcitestyle{authoryear, open={(},close={)}} % Определяем стиль цитирования. Указываем, чтобы цитирование в тексте вставлялось в формате (Автор, год). 
+\setcitestyle{authoryear, open={[},close={]}} % Определяем стиль цитирования. Указываем, чтобы цитирование в тексте вставлялось в формате (Автор, год). 
+% \bibpunct{[}{]}{,}{n}{}{,}
 
 \usepackage{multirow} % таблицы с объединенными строками
 
