@@ -29,6 +29,14 @@ Edit [main.tex](./src/main.tex) to configure the rest.
 - [forms](./forms/) - docx blanks that are needed for coursework
 - [examples](./examples/) - latex hints
 
+## Hints
+
+Use git clean to remove all gitignored files
+
+```bash
+git clean -fX
+```
+
 ## See also
 
 - [forked from here](https://github.com/mirea-ninja/Latex-Template-for-Report-Diploma-Thesis) - more examples and details
